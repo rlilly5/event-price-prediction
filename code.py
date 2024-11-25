@@ -116,10 +116,10 @@ example_artist = "Justin Bieber"  # Replace with actual artist name
 example_venue = "Terminal West"    # Replace with actual venue name
 predict_ticket_price(example_artist, example_venue)
 
-"""**Things to fix:**
-- 'date' should be another parameter for the predictor should be time of purchase
-- change the example_artist and example_venue to be user input
+#"""**Things to fix:**
+#- 'date' should be another parameter for the predictor should be time of purchase
+#- change the example_artist and example_venue to be user input
 
 
-This is only the update, I can change a lot of the model later this week
-"""
+#This is only the update, I can change a lot of the model later this week
+#"""
