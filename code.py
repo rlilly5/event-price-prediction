@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('/Users/kausikamanivannan/DSBA6156/random_forest/ProcessedTicketData.csv')
+data = pd.read_csv('ProcessedTicketData.csv')
 print(f"Features shape: {data.shape}")
 
 # Convert 'date' column to string, take first 10 characters, and convert to datetime
