@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 #import matplotlib.pyplot as plt
 import math
-#import shap
 #import matplotlib.pyplot as plt
 #from sklearn import datasets
 #from sklearn.ensemble import RandomForestRegressor
@@ -21,6 +20,7 @@ This app predicts the best time to purchase **Event Tickets**!
 
     # User input
     Artist = st.text_input('Enter artists name: ', 'ex. Selena Gomez')
+    Select_Artist = st.selectbox("Select Artist", events['artist'].unique())
     artist_popularity = st.slider("Artist Popularity (1-10)", 1, 10)
     venue_capacity = st.number_input("Venue Capacity")
     concert_day = st.selectbox("Concert Day", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
