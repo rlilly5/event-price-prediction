@@ -19,11 +19,11 @@ This app predicts the best time to purchase **Event Tickets**!
     st.write('---')
 
     # User input
-    Artist = st.text_input('Enter artists name: ', 'ex. Selena Gomez')
-    Select_Artist = st.selectbox("Select Artist", events['artist'].unique())
+    artist_input = st.selectbox("Select Artist", events['artist'].unique())
     artist_popularity = st.slider("Artist Popularity (1-10)", 1, 10)
     venue_capacity = st.number_input("Venue Capacity")
     concert_day = st.selectbox("Concert Day", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
+    concert_date = st.date_input("Concert Date", value=None)
     concert_time = st.time_input("Concert Time")
 
     # Make prediction
