@@ -21,7 +21,7 @@ This app predicts the best time to purchase **Event Tickets**!
     # User input
     artist_input = st.selectbox("Select Artist", events['artist'].unique())
     artist_popularity = st.slider("Artist Popularity (1-10)", 1, 10)
-    venue_capacity = st.number_input("Venue Capacity")
+    concert_venue = st.selectbox("Select Venue", events['venue'].unique())
     concert_day = st.selectbox("Concert Day", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])
     concert_date = st.date_input("Concert Date", value=None)
     concert_time = st.time_input("Concert Time")
